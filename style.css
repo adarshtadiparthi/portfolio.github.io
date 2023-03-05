@@ -1,0 +1,575 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Nav bar*/
+nav{    
+    top: 0;
+    left: 0;
+    background-color: #191919;
+    padding:1.5rem 3.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index:1;
+    flex-flow: wrap;
+    position: sticky;
+    width:100%;
+    box-shadow: 0 3px 5px #858585;
+}
+
+.nav_logo{
+    display:flex;
+    justify-content: center;
+}
+
+nav img{
+    height:60px;
+}
+
+nav h1{
+    color:white;
+    padding-left: 20px;
+    padding-top:13px;
+}
+
+nav h1 span{
+    color:rgb(249, 0, 77);
+}
+
+.right_nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.right_nav a{
+    text-decoration: none;
+    color: white;
+    margin: 19.92px 0px;
+    padding: 0px 20px;
+    font-size: 1.5em;
+}
+
+.right_nav a:hover{
+    color: rgb(249, 0, 77);
+}
+
+
+/*Hero section*/
+.hero{
+    background-color: black;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img{
+    width:500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+
+.hero_content{
+    color: white;
+    font-size: 30px;
+}
+
+.name{
+    font-size: 80px;    
+}
+
+.surname{
+    color: rgb(249, 0, 77);
+}
+
+.intro{
+    font-size: 40px;
+}
+
+.about_btn{
+    background-color: rgb(249, 0, 77);
+    color: white;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 15px;
+    transition: transform 250ms;
+}
+
+.about_btn:hover{
+    background-color: white;
+    color: rgb(249, 0, 77);
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*About section*/
+.about{
+    background-color: #191919;
+}
+#about{
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.about_img{
+    width:500px;
+}
+
+.about_content{
+    width:1000px;
+    color: white;
+}
+
+.about_content span{
+    color: rgb(249, 0, 77);
+}
+.about_content h2{
+    font-size: 80px;
+    padding: 20px 0px 40px 0px;
+}
+
+.about_content p{
+    font-size: 25px;
+}
+
+.education,.achievements{
+    width:700px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom:100px;
+}
+
+.edu_btn{
+    color: white;
+    background-color: rgb(249, 0, 77);
+    width:150px;
+    height:150px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow:  0px 0px 10px white;
+    border-radius: 10px;
+    margin-top:205px;
+    margin-right:100px;
+    margin-left:100px;
+    transition: transform 250ms;
+}
+
+.achiev_btn{
+    color: white;
+    background-color: rgb(249, 0, 77);
+    width:150px;
+    height:150px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow:  0px 0px 10px white;
+    border-radius: 10px;
+    margin-top:380px;
+    margin-right:100px;
+    margin-left:100px;
+    transition: transform 250ms;
+}
+
+.edu_btn:hover , .achiev_btn:hover{
+    color:white;
+    background-color: black;
+    border: 2px solid rgb(249, 0, 77);
+    box-shadow:  0px 0px 10px rgb(249, 0, 77);
+    transform: scale(1.05);
+}
+.edu_img,.achiev_img{
+    height:64px;
+}
+
+.edu_btn p, .achiev_btn p{
+    font-size: 18px;
+    padding-top:15px;
+    text-align: center;
+}
+
+
+.btech,.highschool,.ntse,.jee_main,.jee_adv{
+    background-color: black;
+    width:540px;
+    margin-left:100px;
+    margin-bottom:60px;
+    margin-right:100px;
+    translate: transform 250ms;
+}
+
+.btech:hover,.highschool:hover,.ntse:hover,.jee_main:hover,.jee_adv:hover{
+    background-color: rgb(249, 0, 77);
+    border:0.5px solid white;
+    transform: translateY(-30px);
+}
+
+.btech:hover  .btech_1 p,.highschool:hover .highschool_1 p,.ntse:hover  .ntse_1 p,.jee_main:hover  .jee_main_1 p,.jee_adv:hover  .jee_adv_1 p{
+    background-color: white;
+    color: rgb(249, 0, 77);
+
+}
+.btech_1,.highschool_1,.ntse_1,.jee_main_1,.jee_adv_1{
+    display:flex;
+    justify-content: space-between;
+}
+
+.btech_1 img,.highschool_1 img,.ntse_1 img,.jee_main_1 img,.jee_adv_1 img{
+    height:70px;
+    margin: 10px;
+}
+
+.btech_1 p,.highschool_1 p,.ntse_1 p,.jee_main_1 p,.jee_adv_1 p{
+    color: white;
+    background-color: rgb(249, 0, 77);
+    width:220px;
+    border-radius: 0px 40px 40px 0px;
+    margin-top:50px;
+    padding: 15px 30px;
+}
+.btech_2,.highschool_2,.ntse_2,.jee_main_2,.jee_adv_2{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+    margin-bottom:30px;
+    line-height: 0.75;
+}
+
+.btech_2 img,.highschool_2 img,.ntse_2 img,.jee_main_2 img,.jee_adv_2 img{
+    height:45px;
+    margin-top:30px;
+    margin-right:15px;
+    margin-bottom:40px;
+}
+
+.btech_2 p,.highschool_2 p,.ntse_2 p,.jee_main_2 p,.jee_adv_2 p{
+    font-size: 18px;
+    font-weight: 500;
+    width:350px;
+    color:white;
+    margin-top:20px;
+    margin-left:15px;
+    margin-bottom:40px;
+}
+
+.about span{
+    color: rgb(249, 0, 77);
+}
+
+.btech:hover span,.highschool:hover span,.ntse:hover span,.jee_main:hover span,.jee_adv:hover span{
+    color: white;
+}
+
+/*Skills section*/
+.skill{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill h2{
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size:40px;
+}
+
+.skill  span{
+    color: rgb(249, 0, 77);
+}
+
+.skill_logos{
+    width: 1000px;
+}
+
+.skill img{
+    width:250px;
+    background-color: #191919;
+    padding:20px;
+    border-radius:8px 8px 0px 0px;
+    box-shadow: 0px 0px 70px #858585;
+    transition:transform 250ms;
+}
+
+.skill img:hover{
+    background-color: white;
+    border: 4px solid rgb(249, 0, 77);
+    box-shadow: 0px 0px 70px rgb(249, 0, 77);
+    transform: translateY(-10px);
+}
+
+.first_row_logos,.second_row_logos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_row_names,.second_row_names{
+    display:flex;
+    color:white;
+    font-size:20px;
+    justify-content: space-between;
+}
+
+.skill p{
+    font-size: 25px;
+    width:250px;
+    text-align: center;
+    background-color: #191919;
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 80px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow:0px 0px 70px #858585;
+    transition: transform 250ms;
+}
+
+/*Projects section*/
+.project{
+    background-color: #191919;
+    color: white;
+}
+
+.project h2{
+    font-size: 40px;
+    padding:40px;
+    text-align: center;
+}
+
+.project span{
+    color:rgb(249, 0, 77);
+}
+
+.project_imgs{
+    width:1200px;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blender_project,.art_project{
+    margin:100px;
+}
+
+.blender_project img,.art_project img{
+    height:400px;
+    border: 2px solid  #858585;
+    box-shadow: 0px 0px 30px #858585;
+    border-radius: 10px;
+    transition: transform 250ms;
+}
+
+.blender_project img:hover,.art_project img:hover{
+    transform:scale(1.05);
+    border: 4px solid rgb(249, 0, 77);
+    box-shadow: 0px 0px 30px rgb(249, 0, 77);
+
+}
+.blender_project p,.art_project p{
+    text-align: center;
+    margin:20px;
+    font-size: 20px;
+}
+
+/*Contact section*/
+.contact{
+    background-color: black;
+    color: white;
+}
+
+.contact_me{
+    font-size: 40px;
+    padding-top:40px;
+    text-align: center;
+}
+
+.contact span{
+    color:rgb(249, 0, 77);
+}
+
+.contact_information{
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    width:1200px;
+    margin:auto;
+    padding-top:30px;
+    padding-bottom:80px;
+}
+
+.phone,.email,.location{
+    width:400px;
+}
+
+.phone img,.email img,.location img{
+    height:64px;
+    background-color: #858585;
+    padding:10px;
+    margin-top:30px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #ccc;
+    transition: transform 250ms;
+}
+
+.phone img:hover,.email img:hover,.location img:hover{
+    background-color: rgb(249, 0, 77);
+    transform: translateY(-10px);
+}
+.contact_information p{
+    font-size: 20px;
+}
+
+.contact_information h2{
+    font-size:25px;
+    font-weight: 500;
+    padding:30px;
+}
+
+.contact_form{
+    display: flex;
+    justify-content: center;
+    width:1200px;
+    margin:auto;
+    padding-bottom: 60px;
+}
+
+.form_name,.form_email,.form_subject{
+    width:350px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 30px;
+    background-color: #d1d1d1;
+    border:none;
+    font-size: 20px;  
+    height:50px;  
+}
+
+::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #191919;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #191919;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #191919; 
+}
+
+.form_file{
+    width:350px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 30px;
+    background-color:#d1d1d1;
+    height:50px;
+    font-size: 20px;
+}
+
+input::file-selector-button{
+    background-color: #d1d1d1;
+    border: none;
+    color: #191919;
+    padding-top: 3px; 
+}
+
+.form_textarea{
+    height:250px;
+    padding: 20px;
+    width:740px;
+    margin: 15px;
+    border-radius: 30px;
+    background-color: #d1d1d1;
+    font-size: 20px;
+}
+
+.submit_btn{
+    border: none;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 16px 35px;
+    border-radius: 50px;
+    background-color: rgb(249, 0, 77);
+    color: white;
+    margin-left:15px;
+    transition: transform 250ms;
+}
+
+.paper_plane{
+    height:15px;
+    margin-right:8px;
+}
+
+.submit_btn:hover{
+    border: none;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background-color: #858585;
+    color: white;
+    margin-left:15px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contact_img{
+    padding-left:50px;
+}
+/*side bar*/
+.social_media{
+    position:fixed;
+    right:0;
+    top:800px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 2px solid #858585;
+    box-shadow: 0 0 30px #ccc;
+}
+
+.social-media{
+    height:48px;
+    margin:10px;
+    transition: transform 250ms;
+}
+
+.social-media:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+}   
+/*footer*/
+.footer{
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p{
+    color:white;
+    padding:20px;
+    font-size: 20px;
+}
+
+.footer img{
+    height:70px;
+    padding: 10px;
+}
